@@ -1,0 +1,395 @@
+.container_a{
+    width: 1200px;
+    margin:0 auto;
+}
+i{
+    font-style: normal;
+}
+.a_header{
+    height: 70px;
+}
+.header_nav{
+    padding:10px 0 15px;
+    overflow: hidden;
+    /*position: fixed;*/
+    position: absolute;
+    background: #fff;
+    top:0;
+    left:0;
+    right:0;
+}
+.header_nav a{
+    font-weight: bold;
+}
+.logo{
+    float: left;
+}
+/*翻折动画*/
+.show {
+    box-shadow: 0px 0px 5px 0px #888;
+    position: fixed;
+    animation: trunback 1s;
+}
+@keyframes trunback {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+a:hover{
+    text-decoration: none;
+}
+a{
+    color: #000;
+    /*font-weight: bold;*/
+}
+.header_nav .nav_lists{
+    float: right;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+}
+.header_nav span{
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    display: inline-block;
+}
+.nav_item a{
+    display: inline-block;
+    padding:2px 0;
+    height: 22px;
+    line-height: 22px;
+}
+.header_nav .nav_lists .nav_item{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding:0 15px;
+}
+#position{
+    margin-right: 50px;
+    height: 42px;
+}
+
+#login{
+    background-color: #E94840;
+    padding:2px 6px;
+    border-radius: 6px;
+    color: #fff;
+}
+.d_banner {
+    /*margin-top: 67px;*/
+    position: relative;
+}
+ .d_banner .carousel-wrap {
+    position: absolute;
+    height: 420px;
+    width: 100%;
+    z-index: 0;
+}
+ .d_banner .carousel-wrap .carousel {
+    position: absolute;
+    height: 420px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+ .d_banner .carousel-wrap .carousel .carousel-item {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 420px;
+    width: 100%;
+    transition: 1s linear;
+}
+ .d_banner .carousel-wrap .carousel .carousel-item:nth-child(1) {
+    background: url(http://www.daoway.cn/pcimages/banner1.jpg) no-repeat center center;
+}
+ .d_banner .carousel-wrap .carousel .carousel-item:nth-child(2) {
+    background: url(http://www.daoway.cn/pcimages/banner2.jpg) no-repeat center center;
+}
+ .d_banner .carousel-wrap .carousel .carousel-item:nth-child(3) {
+    background: url(http://www.daoway.cn/pcimages/banner3.jpg) no-repeat center center;
+}
+ .d_banner .carousel-wrap .point-wrap {
+    position: absolute;
+    z-index: 22;
+    bottom: 20px;
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+ .d_banner .carousel-wrap .point-wrap a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+ .d_banner .container .banner-nav {
+    margin: 0 20px;
+    width: 180px;
+    background: #757881;
+    color: #fff;
+    position: relative;
+}
+ .d_banner .container .banner-nav ul .nav-name {
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 45px;
+}
+ .d_banner .container .banner-nav ul .nav-name:hover {
+    background-color: #60646d;
+}
+ .d_banner .container .banner-nav ul .nav-name:hover img {
+    display: none;
+}
+ .d_banner .container .banner-nav ul .nav-name:hover .nav-list {
+    display: block;
+}
+ .d_banner .container .banner-nav ul .nav-name:hover a:after {
+    border-right-color: #fff;
+}
+ .d_banner .container .banner-nav ul .nav-name a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+ .d_banner .container .banner-nav ul .nav-name a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: 6px solid transparent;
+    transform: translateY(-50%);
+}
+ .d_banner .container .banner-nav ul .nav-name a i {
+    margin-right: 15px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    width: 70px;
+    text-align: justify;
+    text-align-last: justify;
+}
+ .d_banner .container .banner-nav ul .nav-name .nav-list {
+    position: absolute;
+    top: 0;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 160px;
+    left: 180px;
+}
+ .d_banner .container .banner-nav ul .nav-name .nav-list li {
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 45px;
+}
+.d_banner .container .banner-nav ul .nav-name .nav-list li a:hover {
+    color: #e94840;
+}
+/*主体*/
+d_banner .container_nav .nav.name img{
+    position: absolute;
+    right:0;
+}
+.content_a{
+    margin:0 auto;
+    width: 1200px;
+}
+.container_b{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    clear: both;
+}
+.col-wrap{
+    text-align: right;
+}
+.white{
+    background-color: #fff;
+}
+.col-head{
+    text-align: center;
+    font-size: 22px;
+}
+.col-head p{
+    margin-top: 15px;
+    color: #3d3838;
+    font-size: 22px;
+}
+.col-head h2{
+    height: 31px;
+    color: #3d3838;
+    font-weight: 800;
+    font-size: 28px;
+    font-family: "Microsoft YaHei";
+}
+.col-head .more{
+    margin-top: -13px;
+    text-align: right;
+}
+.content_a .content_b.col-head .more a{
+    color: #eee;
+    font-size: 14px;
+    font-weight: 200;
+}
+.col-content{
+    margin-top: 25px;
+}
+.col-content .pic{
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    width:230px;
+    border:1px solid #eaeaea;
+    margin: 0 5px;
+    background: #fff;
+    height: 345px;
+    cursor: pointer;
+}
+.col-content .pic:hover{
+    box-shadow: 5px 5px 15px 0 #ccc;
+}
+.col-content img{
+    width:100%;
+}
+.col-content .serviceName{
+    font-size: 16px;
+    padding: 10px 0 0;
+    font-weight: 700;
+    height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.col-content .description{
+    text-align: left;
+    color: #929292;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-size: 13px;
+    line-height: 18px;
+    /*margin-bottom: 15px;*/
+}
+.col-content .price{
+    color: #e94840;
+    padding: 0 5px;
+    line-height: 24px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.btn{
+    display: inline-block;
+    height: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius:5px;
+}
+.btn-danger{
+    background-color: #e94840;
+    color: #fff;
+}
+
+.col-content .price span>span{
+    font-size: 20px;
+}
+.price span{
+    margin-top: 10px;
+}
+
+
+
+
+/*底部*/
+.d_footer {
+    background-color: #fff;
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+}
+.d_footer .baozhang {
+    padding-top: 60px;
+    text-align: center;
+}
+.d_footer .baozhang h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+.d_footer .baozhang h2 i {
+    font-size: 28px;
+    font-weight: 800;
+    color: #e94840;
+}
+.d_footer .baozhang p {
+    margin-top: 10px;
+}
+ .d_footer .baozhang .ticket-wrap {
+    margin-top: 68px;
+    text-align: center;
+}
+.d_footer .baozhang .ticket-wrap .ticket {
+    width: 280px;
+    display: inline-block;
+}
+.d_footer .baozhang p {
+    margin-top: 10px;
+}
+.d_footer .cities {
+    padding: 50px 40px 15px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.d_footer .cities .city-list dt {
+    float: left;
+    width: 100px;
+    font: bold 13px/1.4 'Microsoft YaHei';
+}
+.d_footer .cities .city-list dd {
+    width: 1100px;
+    float: right;
+}
+.d_footer .cities .city-list dd ul {
+    overflow: hidden;
+}
+.d_footer .cities .city-list dd ul li {
+    float: left;
+    height: 30px;
+    text-align: center;
+    width: 100px;
+}
+.d_footer .beian {
+    background-color: #f8f8f8;
+    padding: 40px 0 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.d_footer .beian p {
+    color: #898989;
+    font: 200 15px/30px 'Microsoft YaHei';
+}

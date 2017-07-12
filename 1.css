@@ -1,0 +1,107 @@
+
+a{
+    color: #000;
+    font-weight: bold;
+}
+i{
+    font-style: normal;
+}
+body{
+    background-color: #f8f8f8;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.clear:after, .clear:before{
+    content: '';
+    display: table;
+    clear: both;
+}
+.clear{
+    zoom: 1;
+}
+.btn{
+    display: inline-block;
+    height: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0 10px;
+    border-radius:5px;
+}
+.btn-danger{
+    background-color: #e94840;
+    color: #fff;
+}
+.header_nav{
+    padding: 10px 0 15px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    background-color: rgba(255,255,255,.95);
+    transition: .5s;
+    transform-origin: top;
+    z-index: 99;
+    top:0;
+    left: 0;
+    right: 0;
+}
+
+/*翻着动画*/
+.show{
+    box-shadow: 0px 0px 5px 0px #888;
+    position: fixed;
+    animation: trunback 1s;
+}
+@keyframes trunback {
+    from {
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+.logo{
+    float: left;
+    margin-left: 10px;
+}
+.header_nav .nav_list{
+    margin-right: 20px;
+    float: right;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header_nav span{
+    font-weight: bold;
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+.nav_item a{
+    display: inline-block;
+    padding: 2px 0px;
+    height: 22px;
+    line-height: 22px;
+}
+.header_nav .nav_list .nav_item{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+#position{
+    height: 42px;
+    margin-right: 50px;
+}
+#position .show-city{
+    color: #888;
+}
+#login{
+    background-color: #e94840;
+    border-radius: 6px;
+    padding: 2px 6px;
+    color: #fff;
+}

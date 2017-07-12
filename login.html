@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="login">
+    <h2>到位商家后台</h2>
+    <div class="input-group">
+      <form class="forms" name="forms">
+        <div class="input-group input-lg input-1">
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-user"></span>
+            </span>
+          <input class="form-control" id="username" type="text" placeholder="输入昵称或手机号">
+        </div>
+        <div class="input-group input-lg input-2">
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-lock"></span>
+            </span>
+          <input class="form-control" id="password" type="password" placeholder="输入密码">
+        </div>
+        <button class="btn btn-primary btn-lg btn-block">登录</button>
+      </form>
+      <div class="toggle">
+        <a href="javascript:;" class="pull-right">注册</a>
+        <a href="javascript:;" class="pull-left">忘记密码</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="regist" style="display: none;">
+    <div class="content">
+      <h2>注册</h2>
+      <div class="control-group">
+        <div class="input">
+          <input class="form-control" maxlength="11" type="text" placeholder="请输入手机号">
+          <div class="input-group">
+            <img style="height:50px;width: 100%;border: 1px solid #ccc;" src="./img/code.jpg">
+            <input type="text" class="form-control" maxlength="4" placeholder="请输入图片中的字符串">
+            <span class="input-group-addon">获取验证码</span>
+            <span class="input-group-addon" style="display: none">重新发送60</span>
+          </div>
+          <input type="text" style="margin: 10px 0;" class="form-control" maxlength="4" placeholder="请输入验证码">
+          <input class="form-control ng-pristine" type="password" id="r_password" placeholder="请输入密码">
+        </div>
+      </div>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="vehicle" value="Car" class="ng-pristine">
+        <a href="partials/reg.html" target="_Blank">您确认并同意到位用户协议</a>
+      </label>
+    </div>
+    <br>
+    <div style="display: none">
+      <button type="button" class="close" >
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <button class="btn btn-primary btn-lg btn-block">注册</button>
+    <div class="toggle" style="padding: 20px;">
+      <a href="javascript:;" style="margin-left: 80px">已有账户？登录</a>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $('.toggle').on('click', 'a', function (ev) {
+      if($(ev.target).index()===0){
+        if(this.innerText==='注册'){
+          $('.login').hide()
+          $('.regist').show()
+        }else {
+          $('.login').show()
+          $('.regist').hide()
+        }
+      }
+    })
+  })
+</script>
+</body>
+</html>

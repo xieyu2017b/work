@@ -1,0 +1,76 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.clear:after,
+.clear:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+.clear {
+    zoom: 1;
+}
+body {
+    padding: 50px 0 0;
+}
+body .container .login {
+    max-width: 330px;
+    padding: 15px;
+    margin: 13% auto 0;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px #ccc solid;
+}
+body .container .login h2 {
+    background: url(http://www.daoway.com/dian/img/houtai-logo.png) center no-repeat;
+    line-height: 70px;
+    text-indent: -9999px;
+    background-size: 290px;
+    margin-top: 0;
+}
+body .container .login .input-group {
+    width: 100%;
+}
+body .container .login .input-group .forms .input-lg {
+    padding: 0;
+    width: 100%;
+    height: 55px;
+}
+body .container .login .input-group .forms .input-1 {
+    height: 60px;
+    margin-bottom: -5px;
+}
+body .container .login .input-group .forms .input-2 {
+    margin-bottom: 20px;
+}
+body .container .login [placeholder] {
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 100%;
+}
+body .container .regist {
+    max-width: 330px;
+    padding: 15px;
+    margin: 13% auto 0;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px #ccc solid;
+}
+body .container .regist h2 {
+    background: url(http://www.daoway.com/dian/img/houtai-logo.png) center no-repeat;
+    line-height: 70px;
+    text-indent: -9999px;
+    background-size: 290px;
+    margin-top: 0;
+}
+body .container .regist .input input {
+    height: 50px;
+}
+body .container .regist .input > input:first-of-type {
+    margin: 10px 0;
+}
+body .container .toggle {
+    padding: 20px;
+}
